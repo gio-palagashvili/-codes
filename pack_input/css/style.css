@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #222222;
+}
+
+@font-face {
+  font-family: gordita_m;
+  src: url(../../../fonts/gordita/gordita_m.otf);
+}
+@font-face {
+  font-family: lato_b;
+  src: url(../../../fonts/lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: lato_r;
+  src: url(../../../fonts/lato/Lato-Regular.ttf);
+}
+.ham {
+  height: 25px;
+}
+
+nav {
+  margin-top: 3%;
+  display: flex;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 30px;
+}
+
+.ahm {
+  margin-top: 0.7%;
+  margin-left: 90%;
+  color: #969595;
+  font-family: gordita_m;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+nav a:not(.ahm) {
+  margin-top: 0.5%;
+  margin-left: 5%;
+}
+
+nav input {
+  margin-top: 0.07%;
+  margin-left: 65%;
+  outline: none;
+  width: 300px;
+  height: 40px;
+  color: white;
+  border-radius: 20px;
+  padding-left: 18px;
+  background-color: #393939;
+  border: 1px solid #615383;
+}
+
+.search {
+  margin-left: 5%;
+}
+
+.search a {
+  color: #969595;
+  font-family: gordita_m;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.active_a {
+  background-color: #615383;
+  border: 10px solid #615383;
+  border-radius: 100px;
+}
+
+nav input::placeholder {
+  color: #808080;
+}
+
+.search ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.search ul li {
+  margin-right: 20px;
+}
+
+.agh img:nth-child(1) {
+  top: -80px;
+  right: -60px;
+  width: 700px;
+  z-index: 1;
+  position: absolute;
+  transform: scale(0.5);
+}
+.agh img:nth-child(2) {
+  top: -50px;
+  right: 0px;
+  width: 700px;
+  position: absolute;
+}
+.agh h1 {
+  position: absolute;
+  line-height: normal;
+  font-size: 25px;
+  top: 110%;
+  right: 13.7%;
+  color: white;
+  font-family: lato_b;
+}
+
+.inputs {
+  width: 600px;
+  height: 200px;
+  margin-top: 8%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.inputs input {
+  padding-left: 10px;
+  outline: none;
+  border: 2px solid #766896;
+  height: 45px;
+  color: white;
+  font-family: lato_r;
+  border-radius: 8px;
+  background: none;
+  margin-bottom: 20px;
+}
+.inputs input::placeholder {
+  font-size: 13px;
+  font-family: lato_b;
+  color: #5d5d5d;
+}
+.inputs input:not(.ex) {
+  margin-right: 2.5%;
+  width: 47.5%;
+}
+.inputs .error {
+  border: 2px solid #e74c3c;
+}
+.inputs .ex {
+  width: 98%;
+}
+.inputs button {
+  outline: none;
+  width: 32.5%;
+  background: none;
+  border: 1.5px solid #766896;
+  color: #766896;
+  height: 40px;
+  font-family: lato_b;
+  margin-left: 2px;
+  border-radius: 7px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

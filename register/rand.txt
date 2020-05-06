@@ -1,0 +1,42 @@
+    if (pass1.length >= 6 && pass1 == pass2) {
+                $.ajax({
+                    type: "POST",
+                    url: "action_register.php",
+                    data: {
+                        "username": username,
+                        "password": pass1,
+                        "email": email,
+                        "name": name,
+                    },
+                    dataType: "html",
+                    success: function(e) {
+                        console.log(e);
+                        if (e == "error1") {
+                            $("[name='email']").
+                            toggleClass("error_border").val("").
+                            attr("placeholder", "Email Taken");
+                        } else if (e == "error2") {
+                            $(".username").
+                            toggleClass("error_border").
+                            attr("placeholder", "username taken");
+                        } else if (e == "error1error2") {
+                            $(".username").
+                            toggleClass("error_border").
+                            attr("placeholder", "username taken");
+                            $("[name='email']").
+                            toggleClass("error_border").val("").
+                            attr("placeholder", "Email Taken");
+                        }else{
+                        window.location.replace("../");
+                        }
+                    }
+                });
+            } else if (pass1 != pass2) {
+                $(".password").val("").
+                attr("placeholder", "Passwords Did Not Match").
+                toggleClass("error_border");
+            } else if (pass1.length < 6) {
+                $(".password").val("").
+                attr("placeholder", "  Password Must be 6 or more charachters long").
+                toggleClass("error_border").toggleClass("rando");
+            }

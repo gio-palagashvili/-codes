@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.container .div1 {
+    width: 40%;
+}
+
+.container .div2 {
+    width: 70%;
+}
+
+.container {
+    display: flex;
+}
+
+.container .div2 img {
+    position: absolute;
+}
+
+html,
+body {
+    background-color: #414142;
+    height: 100%;
+    z-index: 0;
+}
+
+img {
+    width: 90%;
+    float: RIGHT;
+    z-index: 1;
+    position: absolute;
+    right: 0%;
+    height: 100%;
+}
+
+img:nth-child(2) {
+    width: 550px;
+    z-index: 2;
+    margin-top: -150px;
+    margin-right: 5%;
+}
+
+@font-face {
+    font-family: lato_b;
+    src: url(../fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato_i;
+    src: url(../fonts/lato/Lato-LightItalic.ttf);
+}
+
+.slogan {
+    position: relative;
+    z-index: 11;
+    margin-top: 45%;
+    margin-left: 30%;
+    width: 60%;
+}
+
+.slogan h1 {
+    font-family: lato_b;
+    color: #a4a4a4;
+}
+
+.slogan h5 {
+    font-family: lato_i;
+    color: white;
+}
+
+.slogan button {
+    outline: none;
+    background-color: #575a89;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 220px;
+    height: 35px;
+}
+
+.slogan button:hover {
+    cursor: pointer;
+}
+
+.div2 .n {
+    display: none;
+}
+
+button:hover {
+    background-color: #454874;
+}
+
+.inputs {
+    position: relative;
+    z-index: 100;
+    margin-top: 60%;
+    margin-left: 20%;
+}
+
+.inputs h2 {
+    font-family: lato_b;
+    color: white;
+    margin-left: 2%;
+}
+
+.inputs span {
+    color: #7f7d7d;
+    font-family: lato_b;
+    font-size: 13px;
+    margin-left: 2%;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.error {
+    display: none;
+}
+
+.inputs input {
+    color: white;
+    background-color: #222222;
+    outline: none;
+    border: none;
+    margin-bottom: 1.5%;
+    width: 280px;
+    border-radius: 20px;
+    height: 42px;
+    padding-left: 20px;
+}
+
+.inputs button {
+    outline: none;
+    margin-top: 3%;
+    background-color: #575a89;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 280px;
+    height: 37px;
+}
+
+.inputs button:hover {
+    background-color: #454874;
+}
+
+.inputs input:focus {
+    transition: 1s;
+    width: 320px;
+    color: white;
+    background-color: #575A89;
+}
+
+.inputs input::placeholder:focus {
+    color: white;
+}
+
+.inputs button:hover {
+    cursor: pointer;
+}
+
+.inputs input::placeholder {
+    color: #4c4b4b;
+    font-family: lato_b;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+    img[src="images/Untitled-1.png"] {
+        display: none;
+    }
+
+    .inputs {
+        padding-left: 15%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 140%;
+    }
+
+    .container .n {
+        display: unset;
+        font-size: 17px;
+    }
+
+    .container .n h5 {
+        font-size: 9px;
+    }
+
+    .container .m {
+        display: none;
+    }
+
+    .container input {
+        margin-bottom: 7.6%;
+    }
+
+    .container .inputs {
+        margin-left: 50%;
+    }
+
+    .container .div2 {
+        margin-top: 30%;
+        width: 100%;
+        height: 100%;
+        background-color: #393939;
+    }
+
+    .container .div2 img {
+        padding-bottom: 20px;
+        position: relative;
+        top: 15%;
+        width: 90%;
+    }
+}
+
+/*# sourceMappingURL=login.css.map */

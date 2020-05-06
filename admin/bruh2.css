@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #e74c3c;
+    height: 45px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar .idk {
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+.idk2 {
+    margin-top: 1%;
+}
+
+.navbar i {
+    margin-right: 15px;
+    /* margin-top: 1%; */
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.idk i:hover {
+    transition: all 0.3s ease-in-out;
+    color: #2f3640;
+
+}
+
+.idk2 i:hover {
+    transition: all 0.3s ease-in-out;
+    color: #1e272e;
+}
+
+#myChart {
+    width: 50px;
+    height: 1000px;
+}
+
+@font-face {
+    font-family: moon_r;
+    src: url(../fonts/moon/moonregular.otf);
+}
+
+@font-face {
+    font-family: moon_l;
+    src: url(../fonts/moon/moonlight.otf);
+}
+
+@font-face {
+    font-family: gordita_m;
+    src: url(../fonts/gordita/gordita_m.otf);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(1) {
+    font-family: gordita_m;
+    color: black;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    width: 20px;
+    padding: 8px;
+}
+
+tr {
+    color: #2f343d;
+    font-family: arial;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

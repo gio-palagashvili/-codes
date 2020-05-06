@@ -1,0 +1,155 @@
+$color : #615383;
+$bg_color : #121212;
+// $color : #9b59b6;
+$tr_color : #393939;
+$td_color : #222222;
+$txt_color : #808080;
+
+body {
+    border: unset;
+    font-family: lato_b;
+    background-color: #121212;
+}
+
+@font-face {
+    font-family: gordita_m;
+    src: url(../fonts/gordita/gordita_m.otf);
+}
+
+@font-face {
+    font-family: lato_b;
+    src: url(../fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato_r;
+    src: url(../fonts/lato/Lato-Regular.ttf);
+}
+
+nav {
+    margin-top: 10%;
+    margin-left: 9%;
+
+    h1 {
+        color: white;
+        font-size: xx-large;
+        margin-bottom: 0.5%;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            color: white;
+            margin-right: 1.5%;
+
+            .a_active {
+                color: white;
+            }
+
+            a:hover {
+                cursor: pointer;
+            }
+
+            img {
+                transform: scale(0.5);
+            }
+
+            .lma {
+                display: none
+            }
+
+            .lma1 {
+                display: none;
+                margin-left: 13%;
+            }
+
+            .a_non {
+                color: #69696b;
+            }
+        }
+    }
+}
+
+
+.user_list {
+    margin: auto;
+    width: 1100px;
+    margin-top: 5%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+tr.theader th {
+    text-transform: uppercase;
+    font-family: lato_b;
+    background-color: #393939;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #615383;
+    font-size: 12.5px;
+    line-height: 1.4;
+}
+
+.an1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+tr.theader th:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+tr.theader th:nth-child(8) {
+    border-top-right-radius: 10px;
+}
+
+tr.theader {
+    border-radius: 100px;
+    background-color: none;
+}
+
+tr:not(.theader) {
+    height: 5px;
+    height: 50px;
+    border-bottom: 0.5px solid #615383;
+    color: #808080;
+    font-family: lato_r;
+    border-radius: 10px;
+    background-color: #222222;
+}
+
+table {
+    padding: 100px;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+.img22 {
+    width: 410px;
+    margin: auto;
+}
+
+.decor {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.decor>p {
+    font-size: 20px;
+    font-family: lato_r;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.uk1 {
+    color: yellow;
+}
